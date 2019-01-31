@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+   
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>자바스크립트 DOM </title>
+   <script sec="../js/jquery-3.3.1.min.js" ></script>
+   <style>
+   #box1{width:200px; height:200px;background-color: aquamarine;}
+   </style>
+</head>
+<body>
+
+   <div class="box" id="box1" style="background-color: yellow"></div>
+
+
+   <script>
+      const log = console.log;
+      var box1 = document.getElementById("box1");
+      box1.addEventListener("click", box1click);
+      function box1click(){
+         box1.style.backgroundColor = "#00f";
+
+
+
+      }
+      
+  
+  
+      document.getElemend("box1").style.width = "200px";
+      document.getElemend("box1").style.height = "200px";
+      document.getElemend("box1").style.backgroundcolor = "#f00";
+   
+   
+  
+   </script>
+</body>
+</html>

@@ -7,22 +7,31 @@
    <title>자바스크립트 01 </title>
    <script src="../js/jquery-3.3.1.min.js"></script>
 </head>
-<body>
+<body><div id="box"></div>
    <script>
-      var a = 2;
-      var b = 3;
-      var c = a + b;
-      alert("안녕하세요");
-      var d = fn(confirm("숫자를 입력하세요")); 
-      console.log(confirm("안녕하세요."));
-      console.log(d);
+      var html;
+      html = "<div></div>";
+      html = "<ul<li></li></ul>";
+      var str = "가나다라";
+      var idx = 12;
+       
+console.log(fn(prompt("값을 입력하세요")));
+
+      function fn2(x) {
+         return Number(x) * Number(x);
+      }
 
 
 
       function fn(x)
       {
-         return x * x;
+          
+            return Number(x) * Number(x);
+         
       }
+
+      log(fn(25));
+      log(fn2(25));
       
       
       
