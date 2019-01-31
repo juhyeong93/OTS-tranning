@@ -6,26 +6,41 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>자바스크립트 DOM </title>
+   <link href="../js/w3.css" rel="stylesheet">
    <script sec="../js/jquery-3.3.1.min.js" ></script>
    <style>
-   #box1{width:200px; height:200px;background-color: aquamarine;}
+      div{background-color: yellow}
+   #box1{width:200px; height:200px;background-color: #ccc;}
+   .box { background-color: #00f;}
    </style>
 </head>
 <body>
 
-   <div class="box" id="box1" style="background-color: yellow"></div>
+   <div class="box" id="box1">
+      <span>가나다라</span>
+   </div>
+   <button class="w3-button w3-indigo" id="bt1">확인</button>
+   <button class="w3-button w3-indigo" id="bt2">초기화</button >
 
-
+   
    <script>
-      const log = console.log;
-      var box1 = document.getElementById("box1");
-      box1.addEventListener("click", box1click);
-      function box1click(){
-         box1.style.backgroundColor = "#00f";
+     const log = console.log;
+     
+         var bt1 =document.getElementById("bt1");
+         var bt2 =document.getElementById("bt2");
+         var box =document.getElementById("box1");
+         bt1.addEventListener("click",function(){
+            var html = box1.innerHTML;
+            box1.innerHTML =  html + '<div>★</div>'
+   
+         });
 
+         bt2.addEventListener("click",function(){
+            box1.innerHTML=' ';
 
+         });
 
-      }
+      
       
   
   
