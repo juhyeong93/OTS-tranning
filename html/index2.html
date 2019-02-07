@@ -6,8 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>자바스크립트 DOM </title>
-   <link href="../js/w3.css" rel="stylesheet">
-   <script sec="../js/jquery-3.3.1.min.js" ></script>
+   <link href="../css/w3.css" rel="stylesheet">
+   <script src="../js/jquery-3.3.1.min.js" ></script>
    <style>
       div{background-color: yellow}
    #box1{width:200px; height:200px;background-color: #ccc;}
@@ -25,7 +25,7 @@
    
    <script>
      const log = console.log;
-     
+         /* var bt0 = document.getElementsByClassName("box");
          var bt1 =document.getElementById("bt1");
          var bt2 =document.getElementById("bt2");
          var box =document.getElementById("box1");
@@ -39,14 +39,22 @@
             box1.innerHTML=' ';
 
          });
+ */
 
+   $("#bt1").click(function(){
+    var html = $("#box1").html(); /* innerHTML과 똑같다 */
+    $("#box1").html(html + '<div>★</div>');
+});
+
+   $("#bt2").click(function(){
+      $("#box1").html(" ");
+
+   });
       
-      
-  
-  
-      document.getElemend("box1").style.width = "200px";
+   
+    /*   document.getElemend("box1").style.width = "200px";
       document.getElemend("box1").style.height = "200px";
-      document.getElemend("box1").style.backgroundcolor = "#f00";
+      document.getElemend("box1").style.backgroundcolor = "#f00"; */
    
    
   
