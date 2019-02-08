@@ -64,10 +64,10 @@ $("#box1").click(function(){
 
 });
 */
-var n = 0;
-var interbal =window.setInterval(function(){ 
-   log(n++);
-},500);
+// var n = 0;
+// var interbal =window.setInterval(function(){ 
+//    log(n++);
+// },500);
 
 $("#music > li").each(function(){
    var li = $(this);
@@ -79,8 +79,10 @@ $("#music > li").each(function(){
 });
 
 
-
-
+// Math.floor(90.6); // 소수점 이하 버림
+// Math.cell (90.2); //소수점 이하 올림
+// Math.round(90.2); //소수점 이하 반올림
+// Math.random() //0부터 1보다 작은 난수 발생 
 
 
 
